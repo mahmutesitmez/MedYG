@@ -25,6 +25,7 @@ public partial class LoginForm : Form
     private void loginButton_Click(object sender, EventArgs e)
     {
         DoctorsRepository doctorsRepository = new DoctorsRepository();
-        
+        bool isLogin = doctorsRepository.Login(EmailInput.Text, passwordInput.Text);
+
     }
 }

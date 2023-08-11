@@ -31,7 +31,7 @@ partial class LoginForm
         EmailInput = new TextBox();
         label1 = new Label();
         label2 = new Label();
-        textBox1 = new TextBox();
+        passwordInput = new TextBox();
         loginButton = new Button();
         SuspendLayout();
         // 
@@ -61,12 +61,12 @@ partial class LoginForm
         label2.TabIndex = 3;
         label2.Text = "Password";
         // 
-        // textBox1
+        // passwordInput
         // 
-        textBox1.Location = new Point(103, 66);
-        textBox1.Name = "textBox1";
-        textBox1.Size = new Size(75, 23);
-        textBox1.TabIndex = 2;
+        passwordInput.Location = new Point(103, 66);
+        passwordInput.Name = "passwordInput";
+        passwordInput.Size = new Size(75, 23);
+        passwordInput.TabIndex = 2;
         // 
         // loginButton
         // 
@@ -85,7 +85,7 @@ partial class LoginForm
         ClientSize = new Size(613, 220);
         Controls.Add(loginButton);
         Controls.Add(label2);
-        Controls.Add(textBox1);
+        Controls.Add(passwordInput);
         Controls.Add(label1);
         Controls.Add(EmailInput);
         Name = "LoginForm";
@@ -99,6 +99,6 @@ partial class LoginForm
     private TextBox EmailInput;
     private Label label1;
     private Label label2;
-    private TextBox textBox1;
+    private TextBox passwordInput;
     private Button loginButton;
 }
