@@ -1,0 +1,3 @@
+﻿dotnet ef migrations add m_00033 -c MedContext -s ClinicApp.csproj 
+
+dotnet ef database update -c MedContext  -s ClinicApp.csproj
